@@ -1,0 +1,12 @@
+{
+  "_fv": 73,
+  "_type": "keybind",
+  "definition": {
+    "triggerKey": "V",
+    "keyBindingName": "Open Car Painting GUI",
+    "keyBindingCategoryKey": "flyingcars",
+    "onKeyPressed": {
+      "name": "CarpainterOnKeyPressed"
+    }
+  }
+}

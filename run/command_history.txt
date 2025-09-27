@@ -1,0 +1,11 @@
+/give @p futuristiccars:flying_car_spawn_egg
+/time set day
+/weather clear
+/time set day
+/give @p futuristiccars:winged_flying_car_spawn_egg
+/give @p futuristiccars:catson_flying_car_spawn_egg
+/time set day
+/weather clear
+/time set day
+/weather clear
+/time set day

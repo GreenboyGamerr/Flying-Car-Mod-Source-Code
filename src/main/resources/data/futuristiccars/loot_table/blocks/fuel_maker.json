@@ -1,0 +1,20 @@
+{
+  "type": "minecraft:block",
+  "random_sequence": "futuristiccars:blocks/fuel_maker",
+  "pools": [
+    {
+      "rolls": 1.0,
+      "conditions": [
+        {
+          "condition": "minecraft:survives_explosion"
+        }
+      ],
+      "entries": [
+        {
+          "type": "minecraft:item",
+          "name": "futuristiccars:fuel_maker"
+        }
+      ]
+    }
+  ]
+}
