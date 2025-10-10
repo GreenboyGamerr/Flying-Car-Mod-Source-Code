@@ -1,0 +1,10 @@
+{
+  "flyingcar": {
+    "sounds": [
+      {
+        "name": "futuristiccars:helicopter_1",
+        "stream": false
+      }
+    ]
+  }
+}
