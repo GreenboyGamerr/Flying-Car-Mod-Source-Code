@@ -1,9 +1,0 @@
-{
-  "parent": "futuristiccars:custom/fuelmaker",
-  "textures": {
-    "all": "minecraft:block/beacon",
-    "particle": "minecraft:block/beacon",
-    "0": "futuristiccars:block/tex"
-  },
-  "render_type": "solid"
-}
