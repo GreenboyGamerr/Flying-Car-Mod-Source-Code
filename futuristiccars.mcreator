@@ -2183,7 +2183,7 @@
     {
       "name": "normalcar",
       "type": "number",
-      "scope": "global",
+      "scope": "map",
       "value": "0"
     },
     {
@@ -2215,7 +2215,7 @@
     {
       "name": "flyingcar",
       "files": [
-        "helicopter_1"
+        "cars"
       ],
       "category": "neutral",
       "subtitle": ""
@@ -2251,8 +2251,8 @@
       "item.futuristiccars.adv_fkying_car_white": "ADV Flying Car White",
       "entity.futuristiccars.catson_flying_car_red": "Catson Flying Car",
       "item.futuristiccars.futflying_car": "Fastest Flying Car",
-      "entity.futuristiccars.infinite_car_white": "Infinite Car",
       "subtitles.flyingcar": "",
+      "entity.futuristiccars.infinite_car_white": "Infinite Car",
       "item.futuristiccars.car_fuel_med": "Car Fuel Medium",
       "item.futuristiccars.adv_flyuing_car_yellwo": "ADV Flying Car Yellow",
       "entity.futuristiccars.winged_flying_car_white": "Winged Flying Car",
@@ -2336,7 +2336,7 @@
   "workspaceSettings": {
     "modid": "futuristiccars",
     "modName": "futuristiccars",
-    "version": "1.8",
+    "version": "2",
     "description": "This Mod Adds Futuristic Flying Cars",
     "author": "Greenboygamerr",
     "websiteURL": "https://0.0",

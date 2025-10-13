@@ -61,7 +61,7 @@ public class FuturisticcarsModEntities {
 	public static final DeferredHolder<EntityType<?>, EntityType<CatsonFlyingCarEntity>> CATSON_FLYING_CAR = register("catson_flying_car",
 			EntityType.Builder.<CatsonFlyingCarEntity>of(CatsonFlyingCarEntity::new, MobCategory.CREATURE).setShouldReceiveVelocityUpdates(true).setTrackingRange(64).setUpdateInterval(3)
 
-					.sized(0.6f, 1.8f));
+					.sized(0.6f, 1f));
 	public static final DeferredHolder<EntityType<?>, EntityType<CatsonFlyingCarRedEntity>> CATSON_FLYING_CAR_RED = register("catson_flying_car_red",
 			EntityType.Builder.<CatsonFlyingCarRedEntity>of(CatsonFlyingCarRedEntity::new, MobCategory.CREATURE).setShouldReceiveVelocityUpdates(true).setTrackingRange(64).setUpdateInterval(3)
 
@@ -103,11 +103,11 @@ public class FuturisticcarsModEntities {
 
 					.sized(0.6f, 1.8f));
 	public static final DeferredHolder<EntityType<?>, EntityType<InfiniteCarEntity>> INFINITE_CAR = register("infinite_car",
-			EntityType.Builder.<InfiniteCarEntity>of(InfiniteCarEntity::new, MobCategory.CREATURE).setShouldReceiveVelocityUpdates(true).setTrackingRange(64).setUpdateInterval(3).fireImmune().sized(0.6f, 1.8f));
+			EntityType.Builder.<InfiniteCarEntity>of(InfiniteCarEntity::new, MobCategory.CREATURE).setShouldReceiveVelocityUpdates(true).setTrackingRange(64).setUpdateInterval(3).fireImmune().sized(0.6f, 1f));
 	public static final DeferredHolder<EntityType<?>, EntityType<InfiniteCarRedEntity>> INFINITE_CAR_RED = register("infinite_car_red",
-			EntityType.Builder.<InfiniteCarRedEntity>of(InfiniteCarRedEntity::new, MobCategory.CREATURE).setShouldReceiveVelocityUpdates(true).setTrackingRange(64).setUpdateInterval(3).fireImmune().sized(0.6f, 1.8f));
+			EntityType.Builder.<InfiniteCarRedEntity>of(InfiniteCarRedEntity::new, MobCategory.CREATURE).setShouldReceiveVelocityUpdates(true).setTrackingRange(64).setUpdateInterval(3).fireImmune().sized(0.6f, 1f));
 	public static final DeferredHolder<EntityType<?>, EntityType<InfiniteCarWhiteEntity>> INFINITE_CAR_WHITE = register("infinite_car_white",
-			EntityType.Builder.<InfiniteCarWhiteEntity>of(InfiniteCarWhiteEntity::new, MobCategory.CREATURE).setShouldReceiveVelocityUpdates(true).setTrackingRange(64).setUpdateInterval(3).fireImmune().sized(0.6f, 1.8f));
+			EntityType.Builder.<InfiniteCarWhiteEntity>of(InfiniteCarWhiteEntity::new, MobCategory.CREATURE).setShouldReceiveVelocityUpdates(true).setTrackingRange(64).setUpdateInterval(3).fireImmune().sized(0.6f, 1f));
 
 	// Start of user code block custom entities
 	// End of user code block custom entities

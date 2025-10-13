@@ -46,13 +46,6 @@ public class CarsTickProceduresProcedure {
 	public static void execute(LevelAccessor world, double x, double y, double z, Entity entity) {
 		if (entity == null)
 			return;
-		if (world instanceof Level _level) {
-			if (!_level.isClientSide()) {
-				_level.playSound(null, BlockPos.containing(x, y, z), BuiltInRegistries.SOUND_EVENT.get(ResourceLocation.parse("futuristiccars:flyingcar")), SoundSource.NEUTRAL, 1, 1);
-			} else {
-				_level.playLocalSound(x, y, z, BuiltInRegistries.SOUND_EVENT.get(ResourceLocation.parse("futuristiccars:flyingcar")), SoundSource.NEUTRAL, 1, 1, false);
-			}
-		}
 		if (entity.isVehicle()) {
 			if (entity instanceof Player _player) {
 				_player.getAbilities().invulnerable = true;
@@ -242,7 +235,7 @@ public class CarsTickProceduresProcedure {
 				}
 			}
 		}
-		if (FuturisticcarsModVariables.normalcar > 0) {
+		if (FuturisticcarsModVariables.MapVariables.get(world).normalcar > 0) {
 			if (entity.isVehicle()) {
 				if (InputConstants.isKeyDown(Minecraft.getInstance().getWindow().getWindow(), InputConstants.KEY_Z)) {
 					if (entity.isVehicle()) {
@@ -319,6 +312,21 @@ public class CarsTickProceduresProcedure {
 								_entity.yHeadRotO = _entity.getYRot();
 							}
 						}
+						if (entity instanceof CatsonFlyingCarRedEntity) {
+							((CatsonFlyingCarRedEntity) entity).setAnimation("moveleft");
+						}
+						if (entity instanceof CatsonFlyingCarYellowEntity) {
+							((CatsonFlyingCarYellowEntity) entity).setAnimation("moveleft");
+						}
+						if (entity instanceof InfiniteCarWhiteEntity) {
+							((InfiniteCarWhiteEntity) entity).setAnimation("moveleft");
+						}
+						if (entity instanceof InfiniteCarEntity) {
+							((InfiniteCarEntity) entity).setAnimation("moveleft");
+						}
+						if (entity instanceof InfiniteCarRedEntity) {
+							((InfiniteCarRedEntity) entity).setAnimation("moveleft");
+						}
 						if (entity instanceof FlyingCarEntity) {
 							((FlyingCarEntity) entity).setAnimation("moveleft");
 						}
@@ -360,6 +368,21 @@ public class CarsTickProceduresProcedure {
 						}
 					} else {
 						if (Minecraft.getInstance().options.keyRight.isDown()) {
+							if (entity instanceof CatsonFlyingCarRedEntity) {
+								((CatsonFlyingCarRedEntity) entity).setAnimation("mover");
+							}
+							if (entity instanceof CatsonFlyingCarYellowEntity) {
+								((CatsonFlyingCarYellowEntity) entity).setAnimation("mover");
+							}
+							if (entity instanceof InfiniteCarWhiteEntity) {
+								((InfiniteCarWhiteEntity) entity).setAnimation("mover");
+							}
+							if (entity instanceof InfiniteCarRedEntity) {
+								((InfiniteCarRedEntity) entity).setAnimation("mover");
+							}
+							if (entity instanceof InfiniteCarEntity) {
+								((InfiniteCarEntity) entity).setAnimation("mover");
+							}
 							if (entity instanceof FlyingCarEntity) {
 								((FlyingCarEntity) entity).setAnimation("mover");
 							}
@@ -413,6 +436,21 @@ public class CarsTickProceduresProcedure {
 								}
 							}
 						} else {
+							if (entity instanceof CatsonFlyingCarRedEntity) {
+								((CatsonFlyingCarRedEntity) entity).setAnimation("empty");
+							}
+							if (entity instanceof FastestFlyingCarWhiteEntity) {
+								((FastestFlyingCarWhiteEntity) entity).setAnimation("empty");
+							}
+							if (entity instanceof InfiniteCarRedEntity) {
+								((InfiniteCarRedEntity) entity).setAnimation("empty");
+							}
+							if (entity instanceof InfiniteCarEntity) {
+								((InfiniteCarEntity) entity).setAnimation("empty");
+							}
+							if (entity instanceof InfiniteCarWhiteEntity) {
+								((InfiniteCarWhiteEntity) entity).setAnimation("empty");
+							}
 							if (entity instanceof FlyingCarEntity) {
 								((FlyingCarEntity) entity).setAnimation("empty");
 							}
@@ -915,6 +953,24 @@ public class CarsTickProceduresProcedure {
 		} else {
 			if (entity instanceof Player _player && !_player.level().isClientSide())
 				_player.displayClientMessage(Component.literal("There Is No Fuel In The Car!"), true);
+		}
+		if (entity.isVehicle()) {
+			if (world instanceof Level _level) {
+				if (!_level.isClientSide()) {
+					_level.playSound(null, BlockPos.containing(x, y, z), BuiltInRegistries.SOUND_EVENT.get(ResourceLocation.parse("futuristiccars:flyingcar")), SoundSource.NEUTRAL, (float) 0.1, 1);
+				} else {
+					_level.playLocalSound(x, y, z, BuiltInRegistries.SOUND_EVENT.get(ResourceLocation.parse("futuristiccars:flyingcar")), SoundSource.NEUTRAL, (float) 0.1, 1, false);
+				}
+			}
+			FuturisticcarsMod.queueServerWork(20, () -> {
+				if (world instanceof Level _level) {
+					if (!_level.isClientSide()) {
+						_level.playSound(null, BlockPos.containing(x, y, z), BuiltInRegistries.SOUND_EVENT.get(ResourceLocation.parse("futuristiccars:flyingcar")), SoundSource.NEUTRAL, (float) 0.1, 1);
+					} else {
+						_level.playLocalSound(x, y, z, BuiltInRegistries.SOUND_EVENT.get(ResourceLocation.parse("futuristiccars:flyingcar")), SoundSource.NEUTRAL, (float) 0.1, 1, false);
+					}
+				}
+			});
 		}
 	}
 }

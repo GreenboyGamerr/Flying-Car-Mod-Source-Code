@@ -126,12 +126,12 @@ public class InfiniteCarEntity extends Monster implements GeoEntity {
 
 	@Override
 	protected Vec3 getPassengerAttachmentPoint(Entity entity, EntityDimensions dimensions, float f) {
-		return super.getPassengerAttachmentPoint(entity, dimensions, f).add(0, -1.3f, 0);
+		return super.getPassengerAttachmentPoint(entity, dimensions, f).add(0, -0.6f, 0);
 	}
 
 	protected void dropCustomDeathLoot(ServerLevel serverLevel, DamageSource source, boolean recentlyHitIn) {
 		super.dropCustomDeathLoot(serverLevel, source, recentlyHitIn);
-		this.spawnAtLocation(new ItemStack(FuturisticcarsModItems.INFINITE_CAR_SPAWN_EGG.get()));
+		this.spawnAtLocation(new ItemStack(FuturisticcarsModItems.INFINEN_CAR.get()));
 	}
 
 	@Override

@@ -289,6 +289,7 @@ public void travel(Vec3 dir) {
     super.travel(dir);
 }
 
+
 	@Override
 	protected void checkFallDamage(double y, boolean onGroundIn, BlockState state, BlockPos pos) {
 	}

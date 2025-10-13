@@ -27,7 +27,8 @@ public class InvprocProcedure {
 				_player.containerMenu.broadcastChanges();
 			}
 			FuturisticcarsMod.queueServerWork(120, () -> {
-				FuturisticcarsModVariables.normalcar = 5000;
+				FuturisticcarsModVariables.MapVariables.get(world).normalcar = 5000;
+				FuturisticcarsModVariables.MapVariables.get(world).syncData(world);
 				if (entity instanceof Player _player && !_player.level().isClientSide())
 					_player.displayClientMessage(Component.literal("Fueling Completed For All Cars!"), true);
 			});
@@ -41,7 +42,8 @@ public class InvprocProcedure {
 			if (entity instanceof Player _player && !_player.level().isClientSide())
 				_player.displayClientMessage(Component.literal("Fueling....."), true);
 			FuturisticcarsMod.queueServerWork(120, () -> {
-				FuturisticcarsModVariables.normalcar = 10000;
+				FuturisticcarsModVariables.MapVariables.get(world).normalcar = 10000;
+				FuturisticcarsModVariables.MapVariables.get(world).syncData(world);
 				if (entity instanceof Player _player && !_player.level().isClientSide())
 					_player.displayClientMessage(Component.literal("Fueling Completed For All Cars!"), true);
 			});
@@ -55,7 +57,8 @@ public class InvprocProcedure {
 				_player.containerMenu.broadcastChanges();
 			}
 			FuturisticcarsMod.queueServerWork(120, () -> {
-				FuturisticcarsModVariables.normalcar = 20000;
+				FuturisticcarsModVariables.MapVariables.get(world).normalcar = 20000;
+				FuturisticcarsModVariables.MapVariables.get(world).syncData(world);
 				if (entity instanceof Player _player && !_player.level().isClientSide())
 					_player.displayClientMessage(Component.literal("Fueling Completed For All Cars!"), true);
 			});

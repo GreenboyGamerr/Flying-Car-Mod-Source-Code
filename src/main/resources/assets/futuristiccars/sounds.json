@@ -2,7 +2,7 @@
   "flyingcar": {
     "sounds": [
       {
-        "name": "futuristiccars:helicopter_1",
+        "name": "futuristiccars:cars",
         "stream": false
       }
     ]
