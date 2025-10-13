@@ -135,7 +135,7 @@ public class CarCustomizerINVWhileThisGUIIsOpenTickProcedure {
 													}
 												} else {
 													if ((entity instanceof Player _plrSlotItem && _plrSlotItem.containerMenu instanceof Supplier _splr && _splr.get() instanceof Map _slt ? ((Slot) _slt.get(0)).getItem() : ItemStack.EMPTY)
-															.getItem() == FuturisticcarsModItems.FASTEST_FYING_CAR_WHITE.get()
+															.getItem() == FuturisticcarsModItems.FUTFLYING_CAR.get()
 															&& (entity instanceof Player _plrSlotItem && _plrSlotItem.containerMenu instanceof Supplier _splr && _splr.get() instanceof Map _slt ? ((Slot) _slt.get(1)).getItem() : ItemStack.EMPTY)
 																	.getItem() == FuturisticcarsModItems.WHITE_PAINT.get()) {
 														if (entity instanceof Player _player && _player.containerMenu instanceof Supplier _current && _current.get() instanceof Map _slots) {

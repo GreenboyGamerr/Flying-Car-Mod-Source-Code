@@ -958,7 +958,7 @@
       "name": "FastestFlyingCarRed",
       "type": "animatedentity",
       "compiles": true,
-      "locked_code": true,
+      "locked_code": false,
       "registry_name": "fastest_flying_car_red",
       "metadata": {
         "files": [
@@ -1388,7 +1388,7 @@
       "name": "InfiniteCarRed",
       "type": "animatedentity",
       "compiles": true,
-      "locked_code": false,
+      "locked_code": true,
       "registry_name": "infinite_car_red",
       "metadata": {
         "files": [
@@ -1466,7 +1466,7 @@
       "name": "InfiniteCarWhite",
       "type": "animatedentity",
       "compiles": true,
-      "locked_code": false,
+      "locked_code": true,
       "registry_name": "infinite_car_white",
       "metadata": {
         "files": [
@@ -2141,6 +2141,25 @@
         ]
       },
       "path": "~/carspawning"
+    },
+    {
+      "name": "Getfromslot",
+      "type": "procedure",
+      "compiles": true,
+      "locked_code": false,
+      "registry_name": "getfromslot",
+      "metadata": {
+        "files": [
+          "src/main/java/net/mcreator/futuristiccars/procedures/GetfromslotProcedure.java"
+        ],
+        "dependencies": [
+          {
+            "name": "entity",
+            "type": "entity"
+          }
+        ]
+      },
+      "path": "~/carspawning"
     }
   ],
   "variable_elements": [
@@ -2183,7 +2202,7 @@
     {
       "name": "normalcar",
       "type": "number",
-      "scope": "global",
+      "scope": "map",
       "value": "0"
     },
     {
@@ -2336,7 +2355,7 @@
   "workspaceSettings": {
     "modid": "futuristiccars",
     "modName": "futuristiccars",
-    "version": "1.8",
+    "version": "2.1",
     "description": "This Mod Adds Futuristic Flying Cars",
     "author": "Greenboygamerr",
     "websiteURL": "https://0.0",

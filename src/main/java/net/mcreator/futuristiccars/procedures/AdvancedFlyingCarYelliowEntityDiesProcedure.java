@@ -10,7 +10,7 @@ import net.mcreator.futuristiccars.init.FuturisticcarsModItems;
 public class AdvancedFlyingCarYelliowEntityDiesProcedure {
 	public static void execute(LevelAccessor world, double x, double y, double z) {
 		if (world instanceof ServerLevel _level) {
-			ItemEntity entityToSpawn = new ItemEntity(_level, x, y, z, new ItemStack(FuturisticcarsModItems.WHITE_PAINT.get()));
+			ItemEntity entityToSpawn = new ItemEntity(_level, x, y, z, new ItemStack(FuturisticcarsModItems.YELLOW_PAINT.get()));
 			entityToSpawn.setPickUpDelay(10);
 			_level.addFreshEntity(entityToSpawn);
 		}

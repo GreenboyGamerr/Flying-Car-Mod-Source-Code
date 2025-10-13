@@ -16,7 +16,7 @@ public class ADVFkyingCarWhiteRightclickedOnBlockProcedure {
 		if (entity == null)
 			return;
 		if (world instanceof ServerLevel _level) {
-			Entity entityToSpawn = FuturisticcarsModEntities.ADVANCED_FLYING_CAR_WHITE.get().spawn(_level, BlockPos.containing(x, y, z), MobSpawnType.MOB_SUMMONED);
+			Entity entityToSpawn = FuturisticcarsModEntities.ADVANCED_FLYING_CAR_WHITE.get().spawn(_level, BlockPos.containing(x, y + 1, z), MobSpawnType.MOB_SUMMONED);
 			if (entityToSpawn != null) {
 				entityToSpawn.setYRot(world.getRandom().nextFloat() * 360F);
 			}

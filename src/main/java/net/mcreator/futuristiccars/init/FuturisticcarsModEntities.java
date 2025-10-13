@@ -45,19 +45,19 @@ public class FuturisticcarsModEntities {
 	public static final DeferredHolder<EntityType<?>, EntityType<FlyingCarEntity>> FLYING_CAR = register("flying_car",
 			EntityType.Builder.<FlyingCarEntity>of(FlyingCarEntity::new, MobCategory.CREATURE).setShouldReceiveVelocityUpdates(true).setTrackingRange(64).setUpdateInterval(3)
 
-					.sized(0.6f, 1.8f));
+					.sized(0.6f, 1f));
 	public static final DeferredHolder<EntityType<?>, EntityType<AdvancedFlyingCarEntity>> ADVANCED_FLYING_CAR = register("advanced_flying_car",
 			EntityType.Builder.<AdvancedFlyingCarEntity>of(AdvancedFlyingCarEntity::new, MobCategory.CREATURE).setShouldReceiveVelocityUpdates(true).setTrackingRange(64).setUpdateInterval(3)
 
-					.sized(0.6f, 1.8f));
+					.sized(0.6f, 1f));
 	public static final DeferredHolder<EntityType<?>, EntityType<FastestFlyingCarEntity>> FASTEST_FLYING_CAR = register("fastest_flying_car",
 			EntityType.Builder.<FastestFlyingCarEntity>of(FastestFlyingCarEntity::new, MobCategory.CREATURE).setShouldReceiveVelocityUpdates(true).setTrackingRange(64).setUpdateInterval(3)
 
-					.sized(0.6f, 1.8f));
+					.sized(0.6f, 1f));
 	public static final DeferredHolder<EntityType<?>, EntityType<WingedFlyingCarEntity>> WINGED_FLYING_CAR = register("winged_flying_car",
 			EntityType.Builder.<WingedFlyingCarEntity>of(WingedFlyingCarEntity::new, MobCategory.CREATURE).setShouldReceiveVelocityUpdates(true).setTrackingRange(64).setUpdateInterval(3)
 
-					.sized(0.6f, 1.8f));
+					.sized(0.6f, 1f));
 	public static final DeferredHolder<EntityType<?>, EntityType<CatsonFlyingCarEntity>> CATSON_FLYING_CAR = register("catson_flying_car",
 			EntityType.Builder.<CatsonFlyingCarEntity>of(CatsonFlyingCarEntity::new, MobCategory.CREATURE).setShouldReceiveVelocityUpdates(true).setTrackingRange(64).setUpdateInterval(3)
 
@@ -73,35 +73,35 @@ public class FuturisticcarsModEntities {
 	public static final DeferredHolder<EntityType<?>, EntityType<FastestFlyingCarRedEntity>> FASTEST_FLYING_CAR_RED = register("fastest_flying_car_red",
 			EntityType.Builder.<FastestFlyingCarRedEntity>of(FastestFlyingCarRedEntity::new, MobCategory.CREATURE).setShouldReceiveVelocityUpdates(true).setTrackingRange(64).setUpdateInterval(3)
 
-					.sized(0.6f, 1.8f));
+					.sized(0.6f, 1f));
 	public static final DeferredHolder<EntityType<?>, EntityType<FastestFlyingCarWhiteEntity>> FASTEST_FLYING_CAR_WHITE = register("fastest_flying_car_white",
 			EntityType.Builder.<FastestFlyingCarWhiteEntity>of(FastestFlyingCarWhiteEntity::new, MobCategory.CREATURE).setShouldReceiveVelocityUpdates(true).setTrackingRange(64).setUpdateInterval(3)
 
-					.sized(0.6f, 1.8f));
+					.sized(0.6f, 1f));
 	public static final DeferredHolder<EntityType<?>, EntityType<FlyingCarRedEntity>> FLYING_CAR_RED = register("flying_car_red",
 			EntityType.Builder.<FlyingCarRedEntity>of(FlyingCarRedEntity::new, MobCategory.CREATURE).setShouldReceiveVelocityUpdates(true).setTrackingRange(64).setUpdateInterval(3)
 
-					.sized(0.6f, 1.8f));
+					.sized(0.6f, 1f));
 	public static final DeferredHolder<EntityType<?>, EntityType<FlyingCarYellowEntity>> FLYING_CAR_YELLOW = register("flying_car_yellow",
 			EntityType.Builder.<FlyingCarYellowEntity>of(FlyingCarYellowEntity::new, MobCategory.CREATURE).setShouldReceiveVelocityUpdates(true).setTrackingRange(64).setUpdateInterval(3)
 
-					.sized(0.6f, 1.8f));
+					.sized(0.6f, 1f));
 	public static final DeferredHolder<EntityType<?>, EntityType<WingedFlyingCarRedEntity>> WINGED_FLYING_CAR_RED = register("winged_flying_car_red",
 			EntityType.Builder.<WingedFlyingCarRedEntity>of(WingedFlyingCarRedEntity::new, MobCategory.CREATURE).setShouldReceiveVelocityUpdates(true).setTrackingRange(64).setUpdateInterval(3)
 
-					.sized(0.6f, 1.8f));
+					.sized(0.6f, 1f));
 	public static final DeferredHolder<EntityType<?>, EntityType<WingedFlyingCarWhiteEntity>> WINGED_FLYING_CAR_WHITE = register("winged_flying_car_white",
 			EntityType.Builder.<WingedFlyingCarWhiteEntity>of(WingedFlyingCarWhiteEntity::new, MobCategory.CREATURE).setShouldReceiveVelocityUpdates(true).setTrackingRange(64).setUpdateInterval(3)
 
-					.sized(0.6f, 1.8f));
+					.sized(0.6f, 1f));
 	public static final DeferredHolder<EntityType<?>, EntityType<AdvancedFlyingCarWhiteEntity>> ADVANCED_FLYING_CAR_WHITE = register("advanced_flying_car_white",
 			EntityType.Builder.<AdvancedFlyingCarWhiteEntity>of(AdvancedFlyingCarWhiteEntity::new, MobCategory.CREATURE).setShouldReceiveVelocityUpdates(true).setTrackingRange(64).setUpdateInterval(3)
 
-					.sized(0.6f, 1.8f));
+					.sized(0.6f, 1f));
 	public static final DeferredHolder<EntityType<?>, EntityType<AdvancedFlyingCarYelliowEntity>> ADVANCED_FLYING_CAR_YELLIOW = register("advanced_flying_car_yelliow",
 			EntityType.Builder.<AdvancedFlyingCarYelliowEntity>of(AdvancedFlyingCarYelliowEntity::new, MobCategory.CREATURE).setShouldReceiveVelocityUpdates(true).setTrackingRange(64).setUpdateInterval(3)
 
-					.sized(0.6f, 1.8f));
+					.sized(0.6f, 1f));
 	public static final DeferredHolder<EntityType<?>, EntityType<InfiniteCarEntity>> INFINITE_CAR = register("infinite_car",
 			EntityType.Builder.<InfiniteCarEntity>of(InfiniteCarEntity::new, MobCategory.CREATURE).setShouldReceiveVelocityUpdates(true).setTrackingRange(64).setUpdateInterval(3).fireImmune().sized(0.6f, 1f));
 	public static final DeferredHolder<EntityType<?>, EntityType<InfiniteCarRedEntity>> INFINITE_CAR_RED = register("infinite_car_red",

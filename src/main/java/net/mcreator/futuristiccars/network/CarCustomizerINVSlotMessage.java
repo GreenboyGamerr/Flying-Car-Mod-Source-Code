@@ -18,6 +18,7 @@ import net.minecraft.core.BlockPos;
 
 import net.mcreator.futuristiccars.world.inventory.CarCustomizerINVMenu;
 import net.mcreator.futuristiccars.procedures.RemoveitemsProcedure;
+import net.mcreator.futuristiccars.procedures.GetfromslotProcedure;
 import net.mcreator.futuristiccars.FuturisticcarsMod;
 
 import java.util.HashMap;
@@ -63,6 +64,24 @@ public record CarCustomizerINVSlotMessage(int slotID, int x, int y, int z, int c
 		// security measure to prevent arbitrary chunk generation
 		if (!world.hasChunkAt(new BlockPos(x, y, z)))
 			return;
+		if (slot == 0 && changeType == 1) {
+
+			GetfromslotProcedure.execute(entity);
+		}
+		if (slot == 0 && changeType == 2) {
+			int amount = meta;
+
+			GetfromslotProcedure.execute(entity);
+		}
+		if (slot == 1 && changeType == 1) {
+
+			GetfromslotProcedure.execute(entity);
+		}
+		if (slot == 1 && changeType == 2) {
+			int amount = meta;
+
+			GetfromslotProcedure.execute(entity);
+		}
 		if (slot == 2 && changeType == 1) {
 
 			RemoveitemsProcedure.execute(entity);

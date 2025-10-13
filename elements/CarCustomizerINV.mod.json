@@ -24,6 +24,12 @@
             "fixedValue": false
           },
           "dropItemsWhenNotBound": true,
+          "onTakenFromSlot": {
+            "name": "Getfromslot"
+          },
+          "onStackTransfer": {
+            "name": "Getfromslot"
+          },
           "x": 141,
           "y": 62,
           "locked": false
@@ -43,6 +49,12 @@
             "fixedValue": false
           },
           "dropItemsWhenNotBound": true,
+          "onTakenFromSlot": {
+            "name": "Getfromslot"
+          },
+          "onStackTransfer": {
+            "name": "Getfromslot"
+          },
           "x": 141,
           "y": 94,
           "locked": false

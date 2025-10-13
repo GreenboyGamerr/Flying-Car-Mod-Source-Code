@@ -1287,7 +1287,7 @@
       "name": "AdvancedFlyingCarYelliow",
       "type": "animatedentity",
       "compiles": true,
-      "locked_code": true,
+      "locked_code": false,
       "registry_name": "advanced_flying_car_yelliow",
       "metadata": {
         "files": [
@@ -2141,6 +2141,25 @@
         ]
       },
       "path": "~/carspawning"
+    },
+    {
+      "name": "Getfromslot",
+      "type": "procedure",
+      "compiles": true,
+      "locked_code": false,
+      "registry_name": "getfromslot",
+      "metadata": {
+        "files": [
+          "src/main/java/net/mcreator/futuristiccars/procedures/GetfromslotProcedure.java"
+        ],
+        "dependencies": [
+          {
+            "name": "entity",
+            "type": "entity"
+          }
+        ]
+      },
+      "path": "~/carspawning"
     }
   ],
   "variable_elements": [
@@ -2336,7 +2355,7 @@
   "workspaceSettings": {
     "modid": "futuristiccars",
     "modName": "futuristiccars",
-    "version": "2",
+    "version": "2.2",
     "description": "This Mod Adds Futuristic Flying Cars",
     "author": "Greenboygamerr",
     "websiteURL": "https://0.0",

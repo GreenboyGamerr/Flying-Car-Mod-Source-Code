@@ -9,3 +9,16 @@
 /time set day
 /weather clear
 /time set day
+/locate structure village_plains
+/tp @s -320 ~ 912
+/time set day
+/gamerule doDaylightCycle false
+/tick freeze
+/summon warden
+/tp ~ 400 ~
+/tick unfreeze
+/tp ~ 400 ~
+/tick freeze
+/tick unfreeze
+/tick freeze
+/tick unfreeze

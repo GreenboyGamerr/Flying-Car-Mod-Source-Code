@@ -93,11 +93,35 @@ public class CarCustomizerINVMenu extends AbstractContainerMenu implements Suppl
 			private final int slot = 0;
 			private int x = CarCustomizerINVMenu.this.x;
 			private int y = CarCustomizerINVMenu.this.y;
+
+			@Override
+			public void onTake(Player entity, ItemStack stack) {
+				super.onTake(entity, stack);
+				slotChanged(0, 1, 0);
+			}
+
+			@Override
+			public void onQuickCraft(ItemStack a, ItemStack b) {
+				super.onQuickCraft(a, b);
+				slotChanged(0, 2, b.getCount() - a.getCount());
+			}
 		}));
 		this.customSlots.put(1, this.addSlot(new SlotItemHandler(internal, 1, 16, 58) {
 			private final int slot = 1;
 			private int x = CarCustomizerINVMenu.this.x;
 			private int y = CarCustomizerINVMenu.this.y;
+
+			@Override
+			public void onTake(Player entity, ItemStack stack) {
+				super.onTake(entity, stack);
+				slotChanged(1, 1, 0);
+			}
+
+			@Override
+			public void onQuickCraft(ItemStack a, ItemStack b) {
+				super.onQuickCraft(a, b);
+				slotChanged(1, 2, b.getCount() - a.getCount());
+			}
 		}));
 		this.customSlots.put(2, this.addSlot(new SlotItemHandler(internal, 2, 139, 40) {
 			private final int slot = 2;

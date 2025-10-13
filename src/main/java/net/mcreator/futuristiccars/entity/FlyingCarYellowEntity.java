@@ -94,7 +94,7 @@ public class FlyingCarYellowEntity extends Monster implements GeoEntity {
 		super.defineSynchedData(builder);
 		builder.define(SHOOT, false);
 		builder.define(ANIMATION, "undefined");
-		builder.define(TEXTURE, "cartoon");
+		builder.define(TEXTURE, "ok");
 	}
 
 	public void setTexture(String texture) {
@@ -123,7 +123,7 @@ public class FlyingCarYellowEntity extends Monster implements GeoEntity {
 
 	@Override
 	protected Vec3 getPassengerAttachmentPoint(Entity entity, EntityDimensions dimensions, float f) {
-		return super.getPassengerAttachmentPoint(entity, dimensions, f).add(0, -1.3f, 0);
+		return super.getPassengerAttachmentPoint(entity, dimensions, f).add(0, -0.6f, 0);
 	}
 
 	protected void dropCustomDeathLoot(ServerLevel serverLevel, DamageSource source, boolean recentlyHitIn) {
