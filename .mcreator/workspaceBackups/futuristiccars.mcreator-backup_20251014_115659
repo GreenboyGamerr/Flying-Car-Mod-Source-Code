@@ -4,7 +4,7 @@
       "name": "FlyingCar",
       "type": "animatedentity",
       "compiles": true,
-      "locked_code": false,
+      "locked_code": true,
       "registry_name": "flying_car",
       "metadata": {
         "files": [
@@ -131,7 +131,7 @@
       "name": "AdvancedFlyingCar",
       "type": "animatedentity",
       "compiles": true,
-      "locked_code": false,
+      "locked_code": true,
       "registry_name": "advanced_flying_car",
       "metadata": {
         "files": [
@@ -1287,7 +1287,7 @@
       "name": "AdvancedFlyingCarYelliow",
       "type": "animatedentity",
       "compiles": true,
-      "locked_code": true,
+      "locked_code": false,
       "registry_name": "advanced_flying_car_yelliow",
       "metadata": {
         "files": [
@@ -2270,8 +2270,8 @@
       "item.futuristiccars.adv_fkying_car_white": "ADV Flying Car White",
       "entity.futuristiccars.catson_flying_car_red": "Catson Flying Car",
       "item.futuristiccars.futflying_car": "Fastest Flying Car",
-      "subtitles.flyingcar": "",
       "entity.futuristiccars.infinite_car_white": "Infinite Car",
+      "subtitles.flyingcar": "",
       "item.futuristiccars.car_fuel_med": "Car Fuel Medium",
       "item.futuristiccars.adv_flyuing_car_yellwo": "ADV Flying Car Yellow",
       "entity.futuristiccars.winged_flying_car_white": "Winged Flying Car",
@@ -2355,7 +2355,7 @@
   "workspaceSettings": {
     "modid": "futuristiccars",
     "modName": "futuristiccars",
-    "version": "2.1",
+    "version": "2.2",
     "description": "This Mod Adds Futuristic Flying Cars",
     "author": "Greenboygamerr",
     "websiteURL": "https://0.0",

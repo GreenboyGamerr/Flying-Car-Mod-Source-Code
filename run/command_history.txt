@@ -22,3 +22,7 @@
 /tick unfreeze
 /tick freeze
 /tick unfreeze
+/weather clear
+/time set day
+/gamerule doDaylightCycle false
+/gamerule doWeatherCycle false

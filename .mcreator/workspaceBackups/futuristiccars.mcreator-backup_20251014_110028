@@ -4,7 +4,7 @@
       "name": "FlyingCar",
       "type": "animatedentity",
       "compiles": true,
-      "locked_code": false,
+      "locked_code": true,
       "registry_name": "flying_car",
       "metadata": {
         "files": [
@@ -131,7 +131,7 @@
       "name": "AdvancedFlyingCar",
       "type": "animatedentity",
       "compiles": true,
-      "locked_code": false,
+      "locked_code": true,
       "registry_name": "advanced_flying_car",
       "metadata": {
         "files": [
@@ -195,7 +195,7 @@
       "name": "FastestFlyingCar",
       "type": "animatedentity",
       "compiles": true,
-      "locked_code": false,
+      "locked_code": true,
       "registry_name": "fastest_flying_car",
       "metadata": {
         "files": [
@@ -1287,7 +1287,7 @@
       "name": "AdvancedFlyingCarYelliow",
       "type": "animatedentity",
       "compiles": true,
-      "locked_code": true,
+      "locked_code": false,
       "registry_name": "advanced_flying_car_yelliow",
       "metadata": {
         "files": [
@@ -2355,7 +2355,7 @@
   "workspaceSettings": {
     "modid": "futuristiccars",
     "modName": "futuristiccars",
-    "version": "2.1",
+    "version": "2.2",
     "description": "This Mod Adds Futuristic Flying Cars",
     "author": "Greenboygamerr",
     "websiteURL": "https://0.0",

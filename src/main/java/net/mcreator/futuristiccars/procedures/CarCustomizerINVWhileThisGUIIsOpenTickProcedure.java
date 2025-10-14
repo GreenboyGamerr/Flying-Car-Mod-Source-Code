@@ -450,7 +450,7 @@ public class CarCustomizerINVWhileThisGUIIsOpenTickProcedure {
 																																				} else {
 																																					if ((entity instanceof Player _plrSlotItem && _plrSlotItem.containerMenu instanceof Supplier _splr
 																																							&& _splr.get() instanceof Map _slt ? ((Slot) _slt.get(0)).getItem() : ItemStack.EMPTY)
-																																							.getItem() == FuturisticcarsModItems.INFINE_CAR_WHITE.get()
+																																							.getItem() == FuturisticcarsModItems.INFIN_RED.get()
 																																							&& (entity instanceof Player _plrSlotItem
 																																									&& _plrSlotItem.containerMenu instanceof Supplier _splr
 																																									&& _splr.get() instanceof Map _slt ? ((Slot) _slt.get(1)).getItem() : ItemStack.EMPTY)
